@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agende seu ingresso</title>
+</head>
+<body>
+    <h1><center>Agende seu ingresso</center></h1>
+    <hr>
+    <!-- O action agora redireciona para a página produtos.html -->
+    <form action="produtos.html" method="get">
+        <label for="Telefone" style="font-size: 25px;">Telefone:</label>       
+         (<input type="tel" id="DDD" name="Telefone" style=" width: ;40px;" maxlength="9" placeholder="2" placeholder="85">)
+         <input type="tel" id="Telefone" name="Telefone" maxlength="9" placeholder="987654321">
+         <br><br>
+        <!--Selecione a cidade com as 3 opções fixas-->
+        <label for="Cidade" style="font-size: 25px;">Cidade:</label>       
+         <select name="Cidade" id="Cidade">
+             <option value="Fortaleza">Fortaleza</option>
+             <option value="Caucaia">Caucaia</option>
+             <option value="Aquiraz">Aquiraz</option>
+         </select>
+
+<br><br>
+<label for="Espetáculos" style="font-size: 25px;">Espetáculos:</label>
+     <input type="text" id="Espetáculos" name="Espetáculos" style="width: 150px;height: 30px;">
+         
+<br><br>
+<label for="Horários" style="font-size: 25px;">Horários desejados:</label>
+     <input type="text" id="Horários" name="Horários
+     " style="width: 150px;height: 30px;">
+         
+<br><br>
+<input type="submit" value="enviar">
+
+
+<a href="index.html">Voltar a página Inicial</a>
+
+
+
+    </form>
+    
+</body>
+</html>
