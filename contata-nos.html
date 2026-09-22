@@ -8,6 +8,60 @@
 <body>
     <!--Cabeçalho -->
     <h1> Contata-nos</h1>
+<p style="font-size: 18px;">Se você tiver alguma dúvida ou precisar de assistência, não hesite em nos contatar!</p>
+<strong> Informações e dúvidas sobre ingressos</strong>
+
+<!--Perguntas frequentes (FAQ)-->
+<SECTION>
+    <h2>Perguntas Frequentes</h2>
+    <h3>Como posso comprar ingressos?</h3>
+    <p>Você pode comprar ingressos através do nosso site ou na bilheteria do teatro.</p>
+
+    <h3>Posso cancelar minha compra?</h3>
+    <p>Sim, você pode cancelar sua compra em até 7 dias antes do espetáculo.</p>
+
+    <h3>Quais são as formas de pagamento aceitas?</h3>
+    <p>Aceitamos cartões de crédito, débito e pagamentos via PIX.</p>
+<h3>Dúvidas adicionais</h3>
+    <P> Tire as suas dúvida sobre: meia-entrada, entrada com alimentos, regras para crianças e atrasos.</P>
+</SECTION>
+
+<hr>
+<h2>Horário de Funcionamento</h2>
+<ul> <li><strong>
+    Atendimento online e telefônico: Segunda a sábado, das 8h ás 18h                        
+</strong></li></ul>
+
+<hr>
+
+<!--Formulário de Contacto-->
+<section>
+    <h2>Formulário de Contato</h2>
+    <form action="enviar_contato.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+<section></section>
+    <h2>Anexar Arquivo</h2>
+    <form action="enviar_anexo.php" method="post" enctype="multipart/form-data">
+        <label for="anexo">Selecione um arquivo para enviar:</label>
+        <input type="file" id="anexo" name="anexo" required>
+        <input type="submit" value="Enviar">
+    </form>
+  <section></section>
 
     <!--Link para voltar ao início-->
     <nav>
