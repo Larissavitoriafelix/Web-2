@@ -1,71 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contata-nos</title>
+    <title>Contata-nos - Teatro</title>
 </head>
 <body>
-    <!--Cabeçalho -->
-    <h1> Contata-nos</h1>
-<p style="font-size: 18px;">Se você tiver alguma dúvida ou precisar de assistência, não hesite em nos contatar!</p>
-<strong> Informações e dúvidas sobre ingressos</strong>
 
-<!--Perguntas frequentes (FAQ)-->
-<SECTION>
-    <h2>Perguntas Frequentes</h2>
-    <h3>Como posso comprar ingressos?</h3>
-    <p>Você pode comprar ingressos através do nosso site ou na bilheteria do teatro.</p>
+    <!-- Cabeçalho do Site -->
+    <header>
+        <h1>Contata-nos</h1>
+        <p style="font-size: 18px;">Se você tiver alguma dúvida ou precisar de assistência, não hesite em nos contatar!</p>
+        <p><strong>Informações e dúvidas sobre ingressos</strong></p>
+    </header>
 
-    <h3>Posso cancelar minha compra?</h3>
-    <p>Sim, você pode cancelar sua compra em até 7 dias antes do espetáculo.</p>
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Perguntas frequentes (FAQ) -->
+        <section>
+            <h2>Perguntas Frequentes</h2>
 
-    <h3>Quais são as formas de pagamento aceitas?</h3>
-    <p>Aceitamos cartões de crédito, débito e pagamentos via PIX.</p>
-<h3>Dúvidas adicionais</h3>
-    <P> Tire as suas dúvida sobre: meia-entrada, entrada com alimentos, regras para crianças e atrasos.</P>
-</SECTION>
+            <h3>Como posso comprar ingressos?</h3>
+            <p>Você pode comprar ingressos através do nosso site ou na bilheteria do teatro.</p>
 
-<hr>
-<h2>Horário de Funcionamento</h2>
-<ul> <li><strong>
-    Atendimento online e telefônico: Segunda a sábado, das 8h ás 18h                        
-</strong></li></ul>
+            <h3>Posso cancelar minha compra?</h3>
+            <p>Sim, você pode cancelar sua compra em até 7 dias antes do espetáculo.</p>
 
-<hr>
+            <h3>Quais são as formas de pagamento aceitas?</h3>
+            <p>Aceitamos cartões de crédito, débito e pagamentos via PIX.</p>
 
-<!--Formulário de Contacto-->
-<section>
-    <h2>Formulário de Contato</h2>
-    <form action="enviar_contato.php" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <h3>Dúvidas adicionais</h3>
+            <p>Tire as suas dúvidas sobre: meia-entrada, entrada com alimentos, regras para crianças e atrasos.</p>
+        </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        <hr>
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+        <section>
+            <h2>Horário de Funcionamento</h2>
+            <ul>
+                <li><strong>Atendimento online e telefônico:</strong> Segunda a sábado, das 8h às 18h</li>
+            </ul>
+        </section>
 
-        <label for="telefone">Telefone:</label>
-        <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+        <hr>
 
-        <input type="submit" value="Enviar">
-    </form>
-</section>
+        <!-- Formulário de Contacto -->
+        <section>
+            <h2>Formulário de Contato</h2>
+            <form action="enviar_contato.php" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
 
-<section></section>
-    <h2>Anexar Arquivo</h2>
-    <form action="enviar_anexo.php" method="post" enctype="multipart/form-data">
-        <label for="anexo">Selecione um arquivo para enviar:</label>
-        <input type="file" id="anexo" name="anexo" required>
-        <input type="submit" value="Enviar">
-    </form>
-  <section></section>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br>
 
-    <!--Link para voltar ao início-->
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea><br><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section>
+            <h2>Anexar Arquivo</h2>
+            <form action="enviar_anexo.php" method="post" enctype="multipart/form-data">
+                <label for="anexo">Selecione um arquivo para enviar:</label><br>
+                <input type="file" id="anexo" name="anexo" required><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <!-- Link para voltar ao início -->
     <nav>
-    <a href="index.html">Voltar para a página inicial</a>
+        <a href="index.html">Voltar para a página inicial</a>
     </nav>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2026 Teatro - Todos os direitos autorais reservados.</p>
+        <address>
+            Endereço: Teatro Municipal, Centro de Convenções, Auditório Principal
+        </address>
+    </footer>
+
 </body>
 </html>

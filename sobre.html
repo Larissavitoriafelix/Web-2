@@ -1,52 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
+    <meta name="description" content="Conheça a história, missão, espetáculos e a equipe por trás do Teatro Municipal.">
+    <title>Sobre Nós - Teatro Municipal</title>
 </head>
 <body>
-    <!--Cabeçalho -->
-    <h1>Sobre nós</h1>
 
-    <!--Parágrafo-->
-    <p>Somos uma empresa dedicada a criar soluções incríveis. <br>
-    Nosso objetivo é entregar o melhor conteúdo para os usuários.
+    <!-- Cabeçalho Principal com Navegação Completa -->
+    <header>
+        <h1>Teatro Municipal</h1>
+        <nav aria-label="Navegação Principal">
+            <ul>
+                <li><a href="index.html">index.html</a></li>
+                <li><a href="sobre.html" aria-current="page">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                <li><a href="contata-nos.html">Contate-nos</a></li>
+            </ul>
+        </nav>
 
-</p>
-<h1>Nossa História: Movidos por Paixão, Guiados por Propósito</h1>
-<h2>Toda grande jornada começa com uma inquietação. A nossa nasceu de uma pergunta simples, porém transformadora: e se pudéssemos fazer diferente?
+        <!-- Barra de Busca -->
+        <search>
+            <form action="/buscar" method="get">
+                <label for="site-search">Buscar espetáculo:</label>
+                <input type="search" id="site-search" name="q" placeholder="Ex: Hamlet...">
+                <button type="submit">Buscar</button>
+            </form>
+        </search>
+    </header>
 
-Em um mundo corporativo muitas vezes engessado por burocracias e soluções padronizadas, nós decidimos fundar um espaço onde a inovação real pudesse acontecer. Acreditamos que por trás de cada CNPJ existem pessoas cheias de sonhos, desafios reais e uma vontade imensa de vencer. Foi para dar voz e combustível a esses sonhos que nossa história começou a ser escrita. </h2>
+    <!-- Conteúdo Principal -->
+    <main>
 
-<p>O que começou como um projeto focado em desafiar o status quo evoluiu para um ecossistema completo de soluções estratégicas. Ao longo dos anos, crescemos, aprendemos com cada obstáculo e nos consolidamos como uma referência de confiança para marcas que se recusarão a ser apenas mais uma no mercado.</p>
-<h1>Nossa Missão, Visão e Valores</h1>
-<p>Nossos pilares fundamentais não são apenas palavras emolduradas na parede; eles são o filtro através do qual tomamos todas as decisões, grandes ou pequenas. </p>
+        <!-- Seção de Introdução -->
+        <section>
+            <h2>Sobre o Nosso Teatro</h2>
+            <p>
+                Somos um espaço cultural dedicado a formar plateias e apresentar espetáculos inesquecíveis.<br>
+                Nosso objetivo é transformar vidas por meio das artes cênicas.
+            </p>
+        </section>
 
-  <p>Nossa Missão: Desbloquear o verdadeiro potencial de cada parceiro por meio de estratégias inteligentes, criatividade ousada e execução impecável, gerando impacto real e sustentável. </p>
+        <!-- Seção História com Artigo e Mídia -->
+        <section>
+            <h2>Nossa História: Movidos pela Arte, Guiados pela Paixão</h2>
+            <article>
+                <p><strong>Toda grande jornada começa com uma inquietação. A nossa nasceu de uma pergunta simples: e se pudéssemos aproximar o teatro de todas as pessoas?</strong></p>
+                <p>
+                    Fundado em <time datetime="1998-03-27">27 de março de 1998</time>, nosso teatro nasceu do sonho de criar um palco vivo no coração da cidade. O que começou como um espaço para pequenas produções locais evoluiu para um complexo cultural de referência nacional.
+                </p>
+            </article>
 
-    <p>Nossa Visão: Ser reconhecidos globalmente como o catalisador definitivo de transformação nos negócios, redefinindo o padrão de excelência e inovação em nosso setor.</p>
+            <!-- Imagem com Legenda Semântica -->
+            <figure>
+                <img src="fachada-teatro.jpg" alt="Fachada iluminada do Teatro Municipal à noite">
+                <figcaption>Fachada principal do Teatro Municipal em noite de estreia.</figcaption>
+            </figure>
+        </section>
 
-    <p>Nossos Valores:</p>
+        <!-- Seção Missão, Visão e Valores -->
+        <section>
+            <h2>Nossa Missão, Visão e Valores</h2>
+            <p>Nossos pilares orientam cada curadoria, ensaio e espetáculo que levamos ao palco.</p>
+            
+            <article>
+                <h3>Missão</h3>
+                <p>Promover a cultura e as artes cênicas através de espetáculos acessíveis, diversos e de alta qualidade artística.</p>
+            </article>
 
-        <p>Transparência Radical: Acreditamos em parcerias sinceras, sem letras miúdas ou promessas vazias.</p>
+            <article>
+                <h3>Visão</h3>
+                <p>Ser um polo cultural de referência na difusão do teatro, reconhecido pela inovação artística e formação de novos públicos.</p>
+            </article>
 
-        <p>Inquietude Inovadora: O "sempre fizemos assim" não existe por aqui. Buscamos sempre a melhor forma de evoluir.</p>
+            <article>
+                <h3>Valores</h3>
+                <ul>
+                    <li><strong>Diversidade Cultural:</strong> Valorização de diferentes vozes, histórias e linguagens artísticas.</li>
+                    <li><strong>Acessibilidade:</strong> Garantia de que a arte seja democratizada e alcance todos os públicos.</li>
+                    <li><strong>Excelência Artística:</strong> Compromisso rigoroso com a qualidade técnica e de atuação.</li>
+                    <li><strong>Impacto Social:</strong> Uso do teatro como ferramenta de reflexão e transformação da sociedade.</li>
+                </ul>
+            </article>
+        </section>
 
-        <p>Empatia Ativa: Ouvir antes de falar. Entender a dor do outro é o primeiro passo para encontrar a solução perfeita.</p>
+        <!-- Seção Equipe -->
+        <section>
+            <h2>Quem Faz Acontecer: Nosso Elenco e Produção</h2>
+            <p>
+                Atrás e à frente das cortinas, contamos com uma equipe apaixonada: atores, diretores, cenógrafos, iluminadores e produtores culturais que dedicam sua energia a dar vida a cada cena.
+            </p>
+        </section>
 
-        Compromisso com o Resultado: Foco total no que realmente importa e gera valor mensurável para os nossos clientes.</p>
-<h1>Quem Faz Acontecer: Conheça Nossa Equipe</h1>
-<p>Por trás de cada estratégia bem-sucedida, de cada linha de código ou de cada design marcante, existe um time multidisciplinar apaixonado pelo que faz. Reunimos mentes criativas, analistas de dados implacáveis, estrategistas de negócios e resolvedores de problemas natos.
+        <!-- Elemento Interativo Nativo do HTML5 (accordion/sanfona) -->
+        <section>
+            <h2>Dúvidas Frequentes</h2>
+            <details>
+                <summary>Como comprar ingressos para os espetáculos?</summary>
+                <p>Os ingressos podem ser adquiridos em nossa página de <a href="produtos.html">Produtos</a> ou diretamente em nossa bilheteria física.</p>
+            </details>
+            <details>
+                <summary>Vocês realizam aluguel do espaço para eventos?</summary>
+                <p>Sim! Confira as opções em nossa página de <a href="servicos.html">Serviços</a>.</p>
+            </details>
+            <details>
+                <summary>O teatro possui acessibilidade para cadeirantes?</summary>
+                <p>Sim! Contamos com rampas de acesso, elevadores, assentos adaptados e espaço reservado na plateia.</p>
+            </details>
+        </section>
 
-O que nos une é a crença inabalável de que o trabalho em equipe potencializa os resultados. Aqui, a diversidade de ideias é o nosso maior motor de inovação, e a busca constante por aprendizado é o que nos mantém na vanguarda do mercado. Não somos apenas colegas de trabalho; somos uma comunidade coesa, movida pelo desejo coletivo de ver cada projeto voar alto.</p>
-<h1>Por Que Confiamos no Que Fazemos?</h1>
-<p>Não vendemos apenas serviços; construímos legados. Sabemos que o mercado atual exige resiliência, adaptabilidade e velocidade. Por isso, investimos continuamente em tecnologia, capacitação e na lapidação dos nossos processos.
+    </main>
 
-Quando você escolhe caminhar conosco, você não está contratando apenas fornecedores — você está integrando ao seu time mentes dedicadas a defender os seus interesses com a mesma paixão que você tem pelo seu próprio negócio.</p>
-<!--Link para voltar ao início-->
-<nav>
-  <a href="index.html">Voltar para a página inicial</a>
-</nav>
+    <!-- Rodapé Completo do Site -->
+    <footer>
+        <nav aria-label="Navegação do Rodapé">
+            <ul>
+                <li><a href="index.html">index.html</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                <li><a href="contata-nos.html">Contate-nos</a></li>
+            </ul>
+        </nav>
+
+        <p>&copy; <time datetime="2026">2026</time> Teatro Municipal. Todos os direitos reservados.</p>
+        
+        <address>
+            <strong>Localização:</strong><br>
+            Teatro Municipal — Centro de Convenções, Auditório Principal<br>
+            Contato: <a href="mailto:contato@teatromunicipal.com.br">contato@teatromunicipal.com.br</a>
+        </address>
+    </footer>
+
 </body>
 </html>
