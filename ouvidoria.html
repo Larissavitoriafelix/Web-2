@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Canal de Ouvidoria do Teatro Municipal. Envie suas sugestões, elogios e dúvidas.">
+    <title>Ouvidoria - Teatro Municipal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Teatro Municipal</h1>
+        
+        <nav aria-label="Navegação Principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="ouvidoria.html" aria-current="page">Ouvidoria</a></li>
+                <li><a href="contata-nos.html">Contate-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Canal de Ouvidoria</h2>
+            <p>Envie a sua mensagem, dúvida ou sugestão através do formulário abaixo.</p>
+        </section>
+
+        <section>
+            <form action="#" method="post">
+                <p>
+                    <label for="tipo">Tipo de Manifestação:</label><br>
+                    <select id="tipo" name="tipo" required>
+                        <option value="duvida">Dúvida / Consulta</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="reclamacao">Reclamação</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="nome">Nome Completo:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                </p>
+
+                <p>
+                    <label for="email">E-mail de Contato:</label><br>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </p>
+
+                <p>
+                    <label for="mensagem">Sua Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="6" cols="50" placeholder="Escreva aqui a sua mensagem..." required></textarea>
+                </p>
+
+                <button type="submit">Enviar para a Ouvidoria</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <time datetime="2026">2026</time> Teatro Municipal. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

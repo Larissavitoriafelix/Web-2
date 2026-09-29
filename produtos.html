@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Garanta seus ingressos, confira nossa agenda de shows, itens da bomboniere e produtos oficiais do Teatro Municipal.">
+    <meta name="description" content="Garanta seus ingressos para O Fantasma da Ópera, O Mágico de Oz e confira nossos produtos no Teatro Municipal.">
     <title>Produtos - Teatro Municipal</title>
 </head>
 <body>
 
-    <!-- Cabeçalho Principal com Navegação Completa -->
+    <!-- Cabeçalho Principal -->
     <header>
         <h1>Teatro Municipal</h1>
         
@@ -25,30 +25,27 @@
             </ul>
         </nav>
 
-        <!-- FORMULÁRIO 1: Busca direcionado para a Ouvidoria -->
+        <!-- Busca redirecionando para ouvidoria.html -->
         <search>
             <form action="ouvidoria.html" method="get">
                 <label for="site-search">Buscar informações ou enviar dúvida:</label>
-                <input type="search" id="site-search" name="mensagem" placeholder="Digite sua dúvida ou busca..." required>
+                <input type="search" id="site-search" name="mensagem" placeholder="Digite sua dúvida..." required>
                 <button type="submit">Buscar na Ouvidoria</button>
             </form>
         </search>
     </header>
 
-    <!-- Conteúdo Principal -->
     <main>
-
-        <!-- Seção de Apresentação -->
         <section>
             <h2>Nossos Produtos e Espetáculos</h2>
-            <p>Confira abaixo a nossa programação, valores de ingressos, cardápio da nossa bomboniere e lembranças exclusivas do Teatro.</p>
+            <p>Confira abaixo os espetáculos em cartaz, preços de ingressos, cardápio da bomboniere e souvenirs.</p>
         </section>
 
-        <!-- TABELA 1: Agenda de Espetáculos -->
+        <!-- TABELA 1: Agenda de Espetáculos Atualizada -->
         <section>
             <h3>1. Agenda de Shows e Espetáculos</h3>
             <table border="1" width="100%">
-                <caption>Programação de Peças em Cartaz</caption>
+                <caption>Programação Oficial</caption>
                 <thead>
                     <tr>
                         <th>Espetáculo</th>
@@ -60,39 +57,32 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Romeu e Julieta</td>
+                        <td>O Fantasma da Ópera</td>
                         <td>Teatro Municipal</td>
                         <td>Fortaleza</td>
-                        <td><time datetime="2026-10-10">10/10/2026</time></td>
-                        <td>19:00</td>
+                        <td><time datetime="2026-10-15">15/10/2026</time></td>
+                        <td>20:00</td>
                     </tr>
                     <tr>
-                        <td>O Fantasma da Ópera</td>
+                        <td>O Mágico de Oz</td>
                         <td>Centro de Convenções</td>
                         <td>Aquiraz</td>
-                        <td><time datetime="2026-10-15">15/10/2026</time></td>
-                        <td>19:00</td>
-                    </tr>
-                    <tr>
-                        <td>O Quebra-Nozes</td>
-                        <td>Auditório Principal</td>
-                        <td>Caucaia</td>
                         <td><time datetime="2026-10-20">20/10/2026</time></td>
-                        <td>20:00</td>
+                        <td>16:00</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- TABELA 2: Tabela de Preços e Categorias de Ingressos -->
+        <!-- TABELA 2: Tabela de Ingressos -->
         <section>
-            <h3>2. Tabela de Ingressos</h3>
+            <h3>2. Valoração dos Ingressos</h3>
             <table border="1" width="100%">
-                <caption>Categorias e Valores dos Ingressos</caption>
+                <caption>Valores por Setor</caption>
                 <thead>
                     <tr>
-                        <th>Categoria do Assento</th>
-                        <th>Ingresso Inteira</th>
+                        <th>Setor</th>
+                        <th>Inteira</th>
                         <th>Meia-Entrada</th>
                         <th>Disponibilidade</th>
                     </tr>
@@ -100,14 +90,14 @@
                 <tbody>
                     <tr>
                         <td>Plateia VIP</td>
-                        <td>R$ 100,00</td>
-                        <td>R$ 50,00</td>
+                        <td>R$ 120,00</td>
+                        <td>R$ 60,00</td>
                         <td>Limitada</td>
                     </tr>
                     <tr>
                         <td>Plateia Central</td>
-                        <td>R$ 75,00</td>
-                        <td>R$ 37,50</td>
+                        <td>R$ 80,00</td>
+                        <td>R$ 40,00</td>
                         <td>Disponível</td>
                     </tr>
                     <tr>
@@ -124,11 +114,11 @@
         <section>
             <h3>3. Cardápio da Bomboniere</h3>
             <table border="1" width="100%">
-                <caption>Alimentos e Bebidas Disponíveis no Foyer</caption>
+                <caption>Alimentos e Bebidas</caption>
                 <thead>
                     <tr>
                         <th>Item</th>
-                        <th>Descrição / Tamanho</th>
+                        <th>Descrição</th>
                         <th>Preço Unitário</th>
                     </tr>
                 </thead>
@@ -139,29 +129,19 @@
                         <td>R$ 18,00</td>
                     </tr>
                     <tr>
-                        <td>Sanduíche Natural</td>
-                        <td>Frango com Requeijão ou Queijo/Presunto</td>
-                        <td>R$ 12,00</td>
-                    </tr>
-                    <tr>
                         <td>Refrigerante / Suco</td>
                         <td>Lata 350ml / Garrafa 400ml</td>
                         <td>R$ 8,00</td>
-                    </tr>
-                    <tr>
-                        <td>Caixa de Bombons</td>
-                        <td>Seleção de Doces Finos (100g)</td>
-                        <td>R$ 15,00</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- TABELA 4: Souvenirs e Lembranças do Teatro -->
+        <!-- TABELA 4: Souvenirs do Teatro -->
         <section>
-            <h3>4. Souvenirs e Lembranças Oficiais</h3>
+            <h3>4. Lembranças Oficiais</h3>
             <table border="1" width="100%">
-                <caption>Produtos Comemorativos do Teatro</caption>
+                <caption>Produtos Comemorativos</caption>
                 <thead>
                     <tr>
                         <th>Produto</th>
@@ -172,18 +152,8 @@
                 <tbody>
                     <tr>
                         <td>Programa da Peça Ilustrado</td>
-                        <td>Edição de Colecionador com Fotos e Encarte</td>
+                        <td>Edição de Colecionador com Encarte</td>
                         <td>R$ 25,00</td>
-                    </tr>
-                    <tr>
-                        <td>Caneca do Teatro</td>
-                        <td>Cerâmica 350ml com Logo Gravado</td>
-                        <td>R$ 35,00</td>
-                    </tr>
-                    <tr>
-                        <td>Camiseta Temática</td>
-                        <td>Algodão 100% (Tamanhos P ao XGG)</td>
-                        <td>R$ 60,00</td>
                     </tr>
                     <tr>
                         <td>Máscara Teatral Decorativa</td>
@@ -194,105 +164,54 @@
             </table>
         </section>
 
-        <!-- FORMULÁRIO 2: Pedido / Reserva de Ingressos e Produtos -->
+        <!-- FORMULÁRIO DE RESERVA COM AS NOVAS PEÇAS -->
         <section>
             <h2>Formulário de Pedido e Reserva</h2>
-            <p>Preencha os campos abaixo para reservar seus ingressos ou encomendar souvenirs antecipadamente.</p>
-            
             <form action="contata-nos.html" method="post">
                 <fieldset>
-                    <legend>Dados do Cliente</legend>
-                    
+                    <legend>Dados Pessoais</legend>
                     <p>
                         <label for="nome">Nome Completo:</label><br>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
                     </p>
-
                     <p>
                         <label for="email">E-mail de Contato:</label><br>
                         <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
                     </p>
-
-                    <p>
-                        <label for="telefone">Telefone / WhatsApp:</label><br>
-                        <input type="tel" id="telefone" name="telefone" placeholder="(85) 99999-9999" required>
-                    </p>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Detalhes da Reserva / Pedido</legend>
-
+                    <legend>Opções da Reserva</legend>
                     <p>
                         <label for="espetaculo">Escolha o Espetáculo:</label><br>
-                        <select id="espetaculo" name="espetaculo">
+                        <select id="espetaculo" name="espetaculo" required>
                             <option value="">-- Selecione uma opção --</option>
-                            <option value="romeu-julieta">Romeu e Julieta</option>
                             <option value="fantasma-opera">O Fantasma da Ópera</option>
-                            <option value="quebra-nozes">O Quebra-Nozes</option>
+                            <option value="magico-oz">O Mágico de Oz</option>
                         </select>
                     </p>
-
                     <p>
-                        <label for="setor">Setor dos Ingressos:</label><br>
+                        <label for="setor">Setor do Ingresso:</label><br>
                         <select id="setor" name="setor">
-                            <option value="vip">Plateia VIP (R$ 100,00)</option>
-                            <option value="central">Plateia Central (R$ 75,00)</option>
-                            <option value="balcao">Balcão Superior (R$ 50,00)</option>
+                            <option value="vip">Plateia VIP</option>
+                            <option value="central">Plateia Central</option>
+                            <option value="balcao">Balcão Superior</option>
                         </select>
                     </p>
-
                     <p>
                         <label for="quantidade">Quantidade de Ingressos:</label><br>
                         <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
                     </p>
-
-                    <p>
-                        <label for="souvenir">Deseja adicionar algum produto/souvenir?</label><br>
-                        <select id="souvenir" name="souvenir">
-                            <option value="nenhum">Nenhum</option>
-                            <option value="programa">Programa da Peça Ilustrado (R$ 25,00)</option>
-                            <option value="caneca">Caneca do Teatro (R$ 35,00)</option>
-                            <option value="camiseta">Camiseta Temática (R$ 60,00)</option>
-                            <option value="mascara">Máscara Teatral Decorativa (R$ 45,00)</option>
-                        </select>
-                    </p>
-
-                    <p>
-                        <label for="observacoes">Observações ou Dúvidas Adicionais:</label><br>
-                        <textarea id="observacoes" name="observacoes" rows="4" cols="50" placeholder="Digite aqui observações adicionais para sua reserva..."></textarea>
-                    </p>
                 </fieldset>
 
                 <br>
-                <button type="submit">Enviar Reserva</button>
-                <button type="reset">Limpar Formulário</button>
+                <button type="submit">Confirmar Reserva</button>
             </form>
         </section>
-
     </main>
 
-    <!-- Rodapé Completo do Site -->
     <footer>
-        <nav aria-label="Navegação do Rodapé">
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="parceiros.html">Parceiros</a></li>
-                <li><a href="ouvidoria.html">Ouvidoria</a></li>
-                <li><a href="contata-nos.html">Contate-nos</a></li>
-            </ul>
-        </nav>
-
         <p>&copy; <time datetime="2026">2026</time> Teatro Municipal. Todos os direitos reservados.</p>
-        
-        <address>
-            <strong>Localização:</strong><br>
-            Teatro Municipal — Centro de Convenções, Auditório Principal<br>
-            Contato: <a href="mailto:contato@teatromunicipal.com.br">contato@teatromunicipal.com.br</a>
-        </address>
     </footer>
 
 </body>

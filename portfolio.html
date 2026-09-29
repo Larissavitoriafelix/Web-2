@@ -2,36 +2,177 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Portfólio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça o portfólio de grandes espetáculos do Teatro Municipal: O Fantasma da Ópera, O Mágico de Oz e muito mais.">
+    <title>Portfólio - Teatro Municipal</title>
 </head>
 <body>
+
+    <!-- Cabeçalho Principal com Navegação Completa -->
     <header>
-    <h1>Meu Portfólio</h1>
-</header>
+        <h1>Teatro Municipal</h1>
+        
+        <nav aria-label="Navegação Principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="portfolio.html" aria-current="page">Portfólio</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                <li><a href="contata-nos.html">Contate-nos</a></li>
+            </ul>
+        </nav>
 
-    <!--Parágrafo com quebra de linha-->
-    <h1>Bem-vindo ao meu portfólio! Aqui você encontrará alguns dos meus projetos mais recentes. </h1>
-    <h2>Sinta-se à vontade para explorar e entrar em contato se tiver alguma dúvida.</h2>
+        <!-- Formulário de Busca direcionado para a Ouvidoria -->
+        <search>
+            <form action="ouvidoria.html" method="get">
+                <label for="site-search">Buscar espetáculo ou enviar dúvida:</label>
+                <input type="search" id="site-search" name="mensagem" placeholder="Digite sua dúvida ou busca..." required>
+                <button type="submit">Buscar na Ouvidoria</button>
+            </form>
+        </search>
+    </header>
 
-    <h1>Nossas Especialidades </h1>
-    <p>Desenvolvimento de websites institucionais, plataformas web dinâmicas e sistemas de gestão personalizados.</p>
-    <p>Cada projeto é planejado desde a estrutura semântica até a navegação, garantindo uma ótima experiência para o usuário em qualquer dispositivo</p>
-<h1>Compromisso com Qualidade</h1>
-<p>Acreditamos que a tecnologia deve ser acessível, rápida e intuitiva. </p> 
-<p>Por isso, aplicamos os mais altos padrões de desenvolvimento web em cada etapa da construção das nossas páginas. </p>
+    <!-- Conteúdo Principal -->
+    <main>
 
+        <section>
+            <h2>Nosso Portfólio de Produções</h2>
+            <p>Bem-vindo ao acervo de espetáculos do Teatro Municipal! Aqui você encontrará nossas grandes produções teatrais, musicais e clássicos que já passaram pelos nossos palcos.</p>
+        </section>
 
-    <!--Link para voltar ao início-->
-    <nav>
-    <a href="index.html">Voltar para a página inicial</a>
-    </nav>
+        <!-- SEÇÃO DE DESTAQUES DO PORTFÓLIO -->
+        <section>
+            <h2>Grandes Espetáculos em Destaque</h2>
 
-    <!--rodapé do site (repete em todas as páginas)-->
-<footer>
-  <p>&copy; 2026 Teatro - Todos os direitos autorais reservados.</p>
-  <address>
-    Endereço: Teatro Municipal, Centro de Convenções,Auditório Principal
-  </address>
-</footer><!--rodapé do site (repete em todas as páginas)-->
+            <article>
+                <h3>1. O Fantasma da Ópera</h3>
+                <p><strong>Gênero:</strong> Musical / Drama Clássico</p>
+                <p>Uma das maiores produções musicais de todos os tempos, com cenografia imersiva, figurinos de época e orquestra ao vivo no Palco Principal.</p>
+            </article>
+
+            <article>
+                <h3>2. O Mágico de Oz</h3>
+                <p><strong>Gênero:</strong> Infantil / Aventura Musical</p>
+                <p>Um espetáculo vibrante e encantador para todas as idades, com efeitos visuais modernos, acompanhando a jornada de Dorothy pela estrada de tijolos amarelos.</p>
+            </article>
+
+            <article>
+                <h3>3. Romeu e Julieta</h3>
+                <p><strong>Gênero:</strong> Tragédia / Romance Clássico</p>
+                <p>A imortal obra de William Shakespeare encenada pela nossa companhia residente, trazendo uma roupagem atemporal e emocionante.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- TABELA DO PORTFÓLIO DE ESPETÁCULOS -->
+        <section>
+            <h2>Histórico de Produções e Temporadas</h2>
+            <table border="1" width="100%">
+                <caption>Resumo de Produções Realizadas</caption>
+                <thead>
+                    <tr>
+                        <th>Espetáculo</th>
+                        <th>Ano/Temporada</th>
+                        <th>Elenco / Direção</th>
+                        <th>Público Alcancado</th>
+                        <th>Local da Apresentação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>O Fantasma da Ópera</td>
+                        <td>2026</td>
+                        <td>Companhia Lírica Municipal</td>
+                        <td>Mais de 15.000 espectadores</td>
+                        <td>Teatro Municipal</td>
+                    </tr>
+                    <tr>
+                        <td>O Mágico de Oz</td>
+                        <td>2026</td>
+                        <td>Grupo de Teatro Infantil</td>
+                        <td>Mais de 10.000 espectadores</td>
+                        <td>Centro de Convenções</td>
+                    </tr>
+                    <tr>
+                        <td>Romeu e Julieta</td>
+                        <td>2025 - 2026</td>
+                        <td>Elenco Residente do Teatro</td>
+                        <td>Mais de 12.000 espectadores</td>
+                        <td>Auditório Principal</td>
+                    </tr>
+                    <tr>
+                        <td>O Quebra-Nozes</td>
+                        <td>2025</td>
+                        <td>Corpo de Baile Municipal</td>
+                        <td>Mais de 8.000 espectadores</td>
+                        <td>Teatro Municipal</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- FORMULÁRIO DE AVALIAÇÃO / SUGESTÃO DE PEÇAS -->
+        <section>
+            <h2>Sugira uma Peça para nosso Portfólio</h2>
+            <p>Qual espetáculo você gostaria de ver em nossos palcos na próxima temporada?</p>
+            
+            <form action="ouvidoria.html" method="get">
+                <fieldset>
+                    <legend>Envie sua Sugestão Cultural</legend>
+
+                    <p>
+                        <label for="nome">Seu Nome:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </p>
+
+                    <p>
+                        <label for="sugestao-peca">Nome da Peça / Show Sugerido:</label><br>
+                        <input type="text" id="sugestao-peca" name="sugestao_peca" placeholder="Ex: Hamlet, A Bela e a Fera..." required>
+                    </p>
+
+                    <p>
+                        <label for="mensagem">Por que gostaria de assistir a este espetáculo?</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Escreva seu comentário..." required></textarea>
+                    </p>
+
+                    <button type="submit">Enviar Sugestão</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <br><hr><br>
+
+    <!-- Rodapé Completo do Site -->
+    <footer>
+        <nav aria-label="Navegação do Rodapé">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                <li><a href="contata-nos.html">Contate-nos</a></li>
+            </ul>
+        </nav>
+
+        <p>&copy; <time datetime="2026">2026</time> Teatro Municipal. Todos os direitos reservados.</p>
+        
+        <address>
+            <strong>Localização:</strong><br>
+            Teatro Municipal — Centro de Convenções, Auditório Principal<br>
+            Contato: <a href="mailto:contato@teatromunicipal.com.br">contato@teatromunicipal.com.br</a>
+        </address>
+    </footer>
+
 </body>
 </html>

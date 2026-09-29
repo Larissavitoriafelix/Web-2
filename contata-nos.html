@@ -3,34 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contata-nos - Teatro</title>
+    <meta name="description" content="Entre em contato com o Teatro Municipal. Tire suas dúvidas sobre ingressos, programação e atendimento.">
+    <title>Contata-nos - Teatro Municipal</title>
 </head>
 <body>
 
-    <!-- Cabeçalho do Site -->
+    <!-- Cabeçalho Principal com Navegação Completa -->
     <header>
-        <h1>Contata-nos</h1>
-        <p style="font-size: 18px;">Se você tiver alguma dúvida ou precisar de assistência, não hesite em nos contatar!</p>
-        <p><strong>Informações e dúvidas sobre ingressos</strong></p>
+        <h1>Teatro Municipal</h1>
+        
+        <nav aria-label="Navegação Principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                <li><a href="contata-nos.html" aria-current="page">Contate-nos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Formulário de Busca direcionado para a Ouvidoria -->
+        <search>
+            <form action="ouvidoria.html" method="get">
+                <label for="site-search">Buscar informações ou enviar dúvida:</label>
+                <input type="search" id="site-search" name="mensagem" placeholder="Digite sua dúvida ou busca..." required>
+                <button type="submit">Buscar na Ouvidoria</button>
+            </form>
+        </search>
     </header>
 
     <!-- Conteúdo Principal -->
     <main>
+
+        <section>
+            <h2>Contate-nos</h2>
+            <p>Se você tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato conosco!</p>
+            <p><strong>Informações e suporte sobre ingressos e programação.</strong></p>
+        </section>
+
         <!-- Perguntas frequentes (FAQ) -->
         <section>
-            <h2>Perguntas Frequentes</h2>
+            <h2>Perguntas Frequentes (FAQ)</h2>
 
-            <h3>Como posso comprar ingressos?</h3>
-            <p>Você pode comprar ingressos através do nosso site ou na bilheteria do teatro.</p>
+            <article>
+                <h3>Como posso comprar ingressos?</h3>
+                <p>Você pode comprar ingressos online na nossa página de <a href="produtos.html">Produtos</a> ou diretamente na bilheteria do teatro.</p>
+            </article>
 
-            <h3>Posso cancelar minha compra?</h3>
-            <p>Sim, você pode cancelar sua compra em até 7 dias antes do espetáculo.</p>
+            <article>
+                <h3>Posso cancelar minha compra?</h3>
+                <p>Sim, você pode solicitar o cancelamento em até 7 dias antes da data do espetáculo.</p>
+            </article>
 
-            <h3>Quais são as formas de pagamento aceitas?</h3>
-            <p>Aceitamos cartões de crédito, débito e pagamentos via PIX.</p>
+            <article>
+                <h3>Quais são as formas de pagamento aceitas?</h3>
+                <p>Aceitamos cartões de crédito, débito e pagamentos instantâneos via PIX.</p>
+            </article>
 
-            <h3>Dúvidas adicionais</h3>
-            <p>Tire as suas dúvidas sobre: meia-entrada, entrada com alimentos, regras para crianças e atrasos.</p>
+            <article>
+                <h3>Dúvidas adicionais</h3>
+                <p>Tire suas dúvidas sobre meia-entrada, consumo de alimentos, regras para menores de idade e política de atrasos enviando uma mensagem no formulário abaixo ou na nossa <a href="ouvidoria.html">Ouvidoria</a>.</p>
+            </article>
         </section>
 
         <hr>
@@ -39,51 +75,89 @@
             <h2>Horário de Funcionamento</h2>
             <ul>
                 <li><strong>Atendimento online e telefônico:</strong> Segunda a sábado, das 8h às 18h</li>
+                <li><strong>Bilheteria física:</strong> Terça a domingo, das 13h às 21h</li>
             </ul>
         </section>
 
         <hr>
 
-        <!-- Formulário de Contacto -->
+        <!-- Formulário de Contato -->
         <section>
             <h2>Formulário de Contato</h2>
-            <form action="enviar_contato.php" method="post">
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+            <form action="ouvidoria.html" method="get">
+                <fieldset>
+                    <legend>Envie sua mensagem</legend>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br>
+                    <p>
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </p>
 
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea><br><br>
+                    <p>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </p>
 
-                <label for="telefone">Telefone:</label><br>
-                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required><br><br>
+                    <p>
+                        <label for="telefone">Telefone / WhatsApp:</label><br>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(85) 99999-9999" required>
+                    </p>
 
-                <input type="submit" value="Enviar">
+                    <p>
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="5" cols="50" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    </p>
+
+                    <button type="submit">Enviar Mensagem</button>
+                    <button type="reset">Limpar</button>
+                </fieldset>
             </form>
         </section>
 
+        <br>
+
+        <!-- Formulário para Anexo de Arquivos -->
         <section>
-            <h2>Anexar Arquivo</h2>
-            <form action="enviar_anexo.php" method="post" enctype="multipart/form-data">
-                <label for="anexo">Selecione um arquivo para enviar:</label><br>
-                <input type="file" id="anexo" name="anexo" required><br><br>
-                <input type="submit" value="Enviar">
+            <h2>Enviar Comprovante ou Documento</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Anexar Arquivos (Comprovante de meia-entrada, atestados, etc.)</legend>
+
+                    <p>
+                        <label for="anexo">Selecione o arquivo para envio:</label><br>
+                        <input type="file" id="anexo" name="anexo" required>
+                    </p>
+
+                    <button type="submit">Enviar Arquivo</button>
+                </fieldset>
             </form>
         </section>
+
     </main>
 
-    <!-- Link para voltar ao início -->
-    <nav>
-        <a href="index.html">Voltar para a página inicial</a>
-    </nav>
+    <br><hr><br>
 
-    <!-- Rodapé do site -->
+    <!-- Rodapé Completo do Site -->
     <footer>
-        <p>&copy; 2026 Teatro - Todos os direitos autorais reservados.</p>
+        <nav aria-label="Navegação do Rodapé">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                <li><a href="contata-nos.html">Contate-nos</a></li>
+            </ul>
+        </nav>
+
+        <p>&copy; <time datetime="2026">2026</time> Teatro Municipal. Todos os direitos reservados.</p>
+        
         <address>
-            Endereço: Teatro Municipal, Centro de Convenções, Auditório Principal
+            <strong>Localização:</strong><br>
+            Teatro Municipal — Centro de Convenções, Auditório Principal<br>
+            Contato: <a href="mailto:contato@teatromunicipal.com.br">contato@teatromunicipal.com.br</a>
         </address>
     </footer>
 
