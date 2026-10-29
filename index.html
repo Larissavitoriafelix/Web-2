@@ -5,153 +5,273 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bem-vindo ao Teatro Municipal. Confira nossos próximos espetáculos, compre ingressos e conheça nossa história.">
     <title>Página inicial - Teatro Municipal</title>
+    
+    <!-- CSS INCORPORADO COM GRID LAYOUT -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #311B92;
+            color: #ffffff;
+            min-height: 100vh;
+            
+            /* ESTRUTURA DE GRID (COLOCA O ASIDE NA LATERAL) */
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-columns: 280px 1fr;
+            grid-template-areas: 
+                "header header"
+                "nav    nav"
+                "aside  main"
+                "footer footer";
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* MAPEAMENTO DAS ÁREAS DO GRID */
+        header { grid-area: header; }
+        nav    { grid-area: nav; }
+        aside  { grid-area: aside; }
+        main   { grid-area: main; }
+        footer { grid-area: footer; }
+
+        header, footer {
+            background-color: #030203;
+            color: rgb(19, 199, 223);
+            padding: 1.5em 0;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        nav {
+            background-color: #1a0f4a;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav ul li {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: rgb(19, 199, 223);
+        }
+
+        aside {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        main {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        section {
+            margin-bottom: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #1a0f4a;
+        }
+
+        th, td {
+            border: 1px solid #483d8b;
+            padding: 10px;
+        }
+
+        .btn-destaque {
+            display: inline-block;
+            background-color: rgb(19, 199, 223);
+            color: #030203;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .btn-destaque:hover {
+            background-color: rgb(15, 160, 180);
+        }
+
+        /* RESPONSIVIDADE PARA CELULARES */
+        @media (max-width: 800px) {
+            body {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    "header"
+                    "nav"
+                    "main"
+                    "aside"
+                    "footer";
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Cabeçalho Principal com Navegação Completa -->
+    <!-- Cabeçalho Principal -->
     <header>
-        <h1>Teatro Municipal</h1>
+        <h1 style="color: rgb(19, 199, 223); font-size: 2.5rem; text-transform: uppercase;">Teatro Municipal</h1>
         <figure>
-<picture>
-<source media="(800)" srcset="">
-<img src="teatro1.jpeg" alt="Fachada do Teatro Municipal iluminada à noite" srcset="">
-
-
-
-
-
-</picture>
-
-
-
+            <picture>
+                <source media="(min-width: 800px)" srcset="">
+                <img src="teatro1.jpeg" alt="Fachada do Teatro Municipal iluminada à noite" style="max-width: 100%; height: auto; border-radius: 6px;">
+            </picture>
         </figure>
-        <nav aria-label="Navegação Principal">
-            <ul>
-                <li><a href="index.html" aria-current="page">index.html</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="parceiros.html">Parceiros</a></li>
-                <li><a href="ouvidoria.html">Ouvidoria</a></li>
-                <li><a href="contata-nos.html">Contate-nos</a></li>
-            </ul>
-        </nav>
-
-        <!-- Barra de Busca -->
-        <search>
-            <form action="/buscar" method="get">
-                <label for="site-search">Buscar espetáculo:</label>
-                <input type="search" id="site-search" name="q" placeholder="Ex: Hamlet, Ópera...">
-                <button type="submit">Buscar</button>
-            </form>
-        </search>
     </header>
 
-<section>
-    <h2>Destaques do Teatro Municipal (Grade)</h2>
-    <table border="1" cellpadding="10" cellspacing="0" width="100%">
-        <caption>Destaques da Página Inicial</caption>
-        <tbody>
-            <tr>
-                <td width="50%" align="center">
-                    <figure>
-                        <img src="https://picsum.photos/400/250?random=101" alt="Fachada iluminada do Teatro Municipal" width="400" height="250" loading="lazy">
-                        <figcaption><strong>Nossa Estrutura</strong><br>O palco dos maiores espetáculos da cidade.</figcaption>
-                    </figure>
-                </td>
-                <td width="50%" align="center">
-                    <figure>
-                        <img src="https://picsum.photos/400/250?random=102" alt="Apresentação musical no palco" width="400" height="250" loading="lazy">
-                        <figcaption><strong>Programação Variada</strong><br>Óperas, musicais e peças teatrais.</figcaption>
-                    </figure>
-                </td>
-            </tr>
-            <tr>
-                <td width="50%" align="center">
-                    <figure>
-                        <img src="https://picsum.photos/400/250?random=103" alt="Cena de O Fantasma da Ópera" width="400" height="250" loading="lazy">
-                        <figcaption><strong>O Fantasma da Ópera</strong><br>Em cartaz este mês.</figcaption>
-                    </figure>
-                </td>
-                <td width="50%" align="center">
-                    <figure>
-                        <img src="https://picsum.photos/400/250?random=104" alt="Cena de O Mágico de Oz" width="400" height="250" loading="lazy">
-                        <figcaption><strong>O Mágico de Oz</strong><br>Sessões aos fins de semana.</figcaption>
-                    </figure>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</section>
+    <!-- Navegação Principal -->
+    <nav aria-label="Navegação Principal">
+        <ul>
+            <li><a href="index.html" aria-current="page">index.html</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+            <li><a href="ouvidoria.html">Ouvidoria</a></li>
+            <li><a href="contata-nos.html">Contate-nos</a></li>
+        </ul>
+    </nav>
 
+    <!-- Barra Lateral (Aside) -->
+    <aside>
+        <section class="search-box">
+            <search style="margin-top: 15px;">
+                <!-- DIRECIONA PARA PRODUTOS.HTML AO SUBMETER -->
+                <form action="produtos.html" method="get">
+                    <label for="site-search">Buscar espetáculo:</label><br><br>
+                    <input type="search" id="site-search" name="q" placeholder="Ex: Hamlet, Ópera..." style="width: 100%; padding: 8px; border-radius: 4px; border: none; margin-bottom: 10px;">
+                    <button type="submit" style="width: 100%; padding: 8px; background-color: rgb(19, 199, 223); border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Buscar</button>
+                </form>
+            </search>
+        </section>
 
-
-
-
-
-
+        <section>
+            <h3>Informações</h3>
+            <p>Bilheteria aberta de terça a domingo, das 10h às 22h.</p>
+        </section>
+    </aside>
 
     <!-- Conteúdo Principal -->
     <main>
-<section>
-    <h2>O Teatro Municipal</h2>
-    <figure>
-        <img src="https://picsum.photos/600/300?random=10" alt="Fachada do Teatro Municipal" width="600" height="300">
-        <figcaption>Fachada principal do Teatro Municipal no Centro de Convenções.</figcaption>
-    </figure>
-</section>
+        <section>
+            <h2>Destaques do Teatro Municipal (Grade)</h2>
+            <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                <caption>Destaques da Página Inicial</caption>
+                <tbody>
+                    <tr>
+                        <td width="50%" align="center">
+                            <figure>
+                                <img src="https://picsum.photos/400/250?random=101" alt="Fachada iluminada do Teatro Municipal" width="400" height="250" loading="lazy">
+                                <figcaption><strong>Nossa Estrutura</strong><br>O palco dos maiores espetáculos da cidade.</figcaption>
+                            </figure>
+                        </td>
+                        <td width="50%" align="center">
+                            <figure>
+                                <img src="https://picsum.photos/400/250?random=102" alt="Apresentação musical no palco" width="400" height="250" loading="lazy">
+                                <figcaption><strong>Programação Variada</strong><br>Óperas, musicais e peças teatrais.</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%" align="center">
+                            <figure>
+                                <img src="https://picsum.photos/400/250?random=103" alt="Cena de O Fantasma da Ópera" width="400" height="250" loading="lazy">
+                                <figcaption><strong>O Fantasma da Ópera</strong><br>Em cartaz este mês.</figcaption>
+                            </figure>
+                        </td>
+                        <td width="50%" align="center">
+                            <figure>
+                                <img src="https://picsum.photos/400/250?random=104" alt="Cena de O Mágico de Oz" width="400" height="250" loading="lazy">
+                                <figcaption><strong>O Mágico de Oz</strong><br>Sessões aos fins de semana.</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-<!-- Destaques dos Espetáculos -->
-<section>
-    <h3>Espetáculos em Cartaz</h3>
-    
-    <article>
-        <h4>O Fantasma da Ópera</h4>
-        <img src="https://picsum.photos/300/200?random=1" alt="Cena do musical O Fantasma da Ópera" width="300" height="200" loading="lazy">
-    </article>
+        <section>
+            <h2>O Teatro Municipal</h2>
+            <figure>
+                <img src="https://picsum.photos/600/300?random=10" alt="Fachada do Teatro Municipal" width="600" height="300" style="max-width: 100%; height: auto;">
+                <figcaption>Fachada principal do Teatro Municipal no Centro de Convenções.</figcaption>
+            </figure>
+        </section>
 
-    <article>
-        <h4>O Mágico de Oz</h4>
-        <img src="https://picsum.photos/300/200?random=2" alt="Cena do musical O Mágico de Oz" width="300" height="200" loading="lazy">
-    </article>
-</section>
+        <section>
+            <h3>Espetáculos em Cartaz</h3>
+            <article>
+                <h4>O Fantasma da Ópera</h4>
+                <img src="https://picsum.photos/300/200?random=1" alt="Cena do musical O Fantasma da Ópera" width="300" height="200" loading="lazy">
+            </article>
 
+            <article>
+                <h4>O Mágico de Oz</h4>
+                <img src="https://picsum.photos/300/200?random=2" alt="Cena do musical O Mágico de Oz" width="300" height="200" loading="lazy">
+            </article>
+        </section>
 
-
-
-
-
-
-
-        <!-- Seção Destaque Principal -->
         <section>
             <h2>Viva a Magia do Teatro</h2>
             <p>O palco onde grandes histórias ganham vida. Arte, cultura e entretenimento para toda a família.</p>
-            <a href="produtos.html">Garantir Ingressos</a>
-            <a href="portfolio.html">Ver Peças em Cartaz</a>
+            <a href="produtos.html" class="btn-destaque">Garantir Ingressos</a>
+            <a href="portfolio.html" class="btn-destaque" style="background-color: #673AB7; color: white;">Ver Peças em Cartaz</a>
         </section>
 
-        <!-- Seção Destaques da Temporada -->
         <section>
             <h2>Destaques da Temporada</h2>
-
             <article>
                 <h3>Espetáculo: O Fantasma da Ópera</h3>
                 <p>Uma produção emocionante repleta de música, figurinos deslumbrantes e grandes atuações.</p>
                 <p>Data: <time datetime="2026-10-15">15 de Outubro de 2026</time></p>
-                <a href="portfolio.html">Saiba mais</a>
+                <a href="portfolio.html" style="color: rgb(19, 199, 223);">Saiba mais</a>
             </article>
 
             <article>
                 <h3>Peça Infantil: O Mágico de Oz</h3>
                 <p>Diversão garantida para as crianças em uma jornada inesquecível pelo caminho dos tijolos amarelos.</p>
                 <p>Data: <time datetime="2026-10-20">20 de Outubro de 2026</time></p>
-                <a href="portfolio.html">Saiba mais</a>
+                <a href="portfolio.html" style="color: rgb(19, 199, 223);">Saiba mais</a>
             </article>
         </section>
 
-        <!-- O Que Oferecemos -->
         <section>
             <h2>O Que Oferecemos</h2>
             <ul>
@@ -159,31 +279,17 @@
                 <li><strong>Locação de Espaços:</strong> Aluguel do auditório principal para eventos.</li>
                 <li><strong>Workshops e Oficinas:</strong> Cursos de atuação, iluminação e cenografia.</li>
             </ul>
-            <p>Conheça também nossos <a href="parceiros.html">Parceiros</a> e a nossa <a href="ouvidoria.html">Ouvidoria</a>.</p>
+            <p>Conheça também nossos <a href="parceiros.html" style="color: rgb(19, 199, 223);">Parceiros</a> e a nossa <a href="ouvidoria.html" style="color: rgb(19, 199, 223);">Ouvidoria</a>.</p>
         </section>
     </main>
 
     <!-- Rodapé Completo -->
     <footer>
-        <nav aria-label="Navegação do Rodapé">
-            <ul>
-                <li><a href="index.html">index.html</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="parceiros.html">Parceiros</a></li>
-                <li><a href="ouvidoria.html">Ouvidoria</a></li>
-                <li><a href="contata-nos.html">Contate-nos</a></li>
-            </ul>
-        </nav>
-
         <p>&copy; <time datetime="2026">2026</time> Teatro Municipal. Todos os direitos reservados.</p>
-        
         <address>
             <strong>Localização:</strong><br>
             Teatro Municipal — Centro de Convenções, Auditório Principal<br>
-            Contato: <a href="mailto:contato@teatromunicipal.com.br">contato@teatromunicipal.com.br</a>
+            Contato: <a href="mailto:contato@teatromunicipal.com.br" style="color: rgb(19, 199, 223);">contato@teatromunicipal.com.br</a>
         </address>
     </footer>
 
